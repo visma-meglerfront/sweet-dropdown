@@ -1,0 +1,35 @@
+{
+  "name": "sweet-dropdown",
+  "description": "Sweet Dropdown Plugin for jQuery",
+  "main": "dist/min/jquery.sweet-dropdown.min.js",
+  "authors": [
+    "Adepto.as AS",
+    "Benjamin Schmidt <bs@adepto.as>"
+  ],
+  "keywords": [
+    "sweet",
+    "model",
+    "alert",
+    "jquery",
+    "plugin",
+    "lightbox"
+  ],
+  "moduleType": [],
+  "homepage": "http://sweet-dropdown.adepto.as/",
+    "license": "(MIT OR GPL-2.1)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adeptoas/sweet-dropdown"
+  },
+  "dependencies": {
+    "jquery": ">=2.2.0"
+  },
+  "ignore": [
+    "**/.*",
+    "examples",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

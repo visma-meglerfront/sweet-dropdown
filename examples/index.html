@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>SweetDropdown: Examples</title>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter" />
+		<link rel="stylesheet" href="https://assets.adepto.as/themes/fonts/nexa/stylesheet.css" />
+		<link rel="stylesheet" href="clear-sans/stylesheet.css" />
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.019/css/hack.min.css" />
+		<link rel="stylesheet" href="css/examples.css" />
+		<link rel="stylesheet" href="css/jquery.sweet-dropdown.min.css" />
+
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" async></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.sweet-dropdown.min.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<div class="logo">
+				<span class="logo">
+					<span class="sweet">Sweet</span>
+					<span class="modal nexa">Dropdown</span>
+				</span>
+			</div>
+
+			<div class="slogan">
+				Sweet and versatile.
+			</div>
+
+			<div class="github">
+				<a href="https://github.com/adeptoas/sweet-dropdown">
+					View on
+
+					<svg style="width:24px; height:24px" viewBox="0 0 24 24">
+					    <path fill="#000000" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+					</svg>
+
+					<span>GitHub</span>
+				</a>
+			</div>
+		</header>
+
+		<section class="intro">
+			<div class="wrap">
+				<h2>
+					Create dropdowns in any direction with any kind of content.
+				</h2>
+			</div>
+		</section>
+
+		<section class="demo">
+			<div class="paragraph">
+				<p>
+					A trigger for a <a href="#" data-dropdown="#dropdown-demo-1">SweetDropdown</a> can be really
+					<button data-dropdown="#dropdown-demo-2">anything</button>.
+				</p>
+
+				<div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="dropdown-demo-1">
+					<ul>
+						<li><a>This is a demo.</a></li>
+					</ul>
+				</div>
+
+				<div class="dropdown-menu dropdown-anchor-top-center dropdown-has-anchor dark" id="dropdown-demo-2">
+					<ul>
+						<li><a>This is another demo, triggered from a button.</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="example">
+				<div class="meta">
+					<h3><span>Standard</span></h3>
+
+					<button class="bordered" data-dropdown="#dropdown-standard">Try out!</button>
+
+					<div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard">
+						<ul>
+							<li><a href="#">Item 1</a></li>
+							<li><a href="#">Item 2</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Item 3</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="code">
+					<h4>Dropdown:</h4>
+					<pre class="prettyprint stylize">&lt;div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a>&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+					<h4>Trigger:</h4>
+					<pre class="prettyprint stylize">&lt;button data-dropdown="#dropdown-standard"&gt;Try out!&lt;/button&gt;</pre>
+				</div>
+			</div>
+
+			<div class="example">
+				<div class="meta">
+					<h3><span>With Icons</span></h3>
+
+					<button class="bordered" data-dropdown="#dropdown-with-icons">Try out!</button>
+
+					<div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-with-icons">
+						<ul>
+							<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M15.76 6.78l-2.57-3.06L4 11.43l2.57 3.06 9.19-7.71zM44 11.44l-9.19-7.71-2.57 3.06 9.19 7.71L44 11.44zM23.99 8C14.04 8 6 16.06 6 26s8.04 18 17.99 18S42 35.94 42 26 33.94 8 23.99 8zM24 40c-7.73 0-14-6.27-14-14s6.27-14 14-14 14 6.27 14 14-6.26 14-14 14zm2-22h-4v6h-6v4h6v6h4v-6h6v-4h-6v-6z"/></svg> Item 1</a></li>
+							<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> Item 2</a></li>
+							<li class="divider"></li>
+							<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM12 17.5L6.5 12H10v-2h4v2h3.5L12 17.5zM5.12 5l.81-1h12l.94 1H5.12z"/></svg> Item 3</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="code">
+					<h4>Dropdown:</h4>
+					<pre class="prettyprint stylize">&lt;div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-with-icons"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;svg&gt;...&lt;/svg&gt; Item 1&lt;/a>&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;svg&gt;...&lt;/svg&gt; Item 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;svg&gt;...&lt;/svg&gt; Item 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+					<h4>Trigger:</h4>
+					<pre class="prettyprint stylize">&lt;button data-dropdown="#dropdown-with-icons"&gt;Try out!&lt;/button&gt;</pre>
+				</div>
+			</div>
+
+			<div class="example">
+				<div class="meta">
+					<h3><span>Dark with Icons</span></h3>
+
+					<button class="bordered" data-dropdown="#dropdown-dark-with-icons">Try out!</button>
+
+					<div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="dropdown-dark-with-icons">
+						<ul>
+							<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M15.76 6.78l-2.57-3.06L4 11.43l2.57 3.06 9.19-7.71zM44 11.44l-9.19-7.71-2.57 3.06 9.19 7.71L44 11.44zM23.99 8C14.04 8 6 16.06 6 26s8.04 18 17.99 18S42 35.94 42 26 33.94 8 23.99 8zM24 40c-7.73 0-14-6.27-14-14s6.27-14 14-14 14 6.27 14 14-6.26 14-14 14zm2-22h-4v6h-6v4h6v6h4v-6h6v-4h-6v-6z"/></svg> Item 1</a></li>
+							<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg> Item 2</a></li>
+							<li class="divider"></li>
+							<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM12 17.5L6.5 12H10v-2h4v2h3.5L12 17.5zM5.12 5l.81-1h12l.94 1H5.12z"/></svg> Item 3</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="code">
+					<h4>Dropdown:</h4>
+					<pre class="prettyprint stylize">&lt;div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor dark" id="dropdown-dark-with-icons"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;svg&gt;...&lt;/svg&gt; Item 1&lt;/a>&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;svg&gt;...&lt;/svg&gt; Item 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;&lt;svg&gt;...&lt;/svg&gt; Item 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+					<h4>Trigger:</h4>
+					<pre class="prettyprint stylize">&lt;button data-dropdown="#dropdown-dark-with-icons"&gt;Try out!&lt;/button&gt;</pre>
+				</div>
+			</div>
+
+			<div class="example">
+				<div class="meta">
+					<h3><span>Different Position</span></h3>
+
+					<button class="bordered" data-dropdown="#dropdown-left-center">Try out!</button>
+
+					<div class="dropdown-menu dropdown-anchor-left-center dropdown-has-anchor" id="dropdown-left-center">
+						<ul>
+							<li><a href="#">Item 1</a></li>
+							<li><a href="#">Item 2</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Item 3</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="code">
+					<h4>Dropdown:</h4>
+					<pre class="prettyprint stylize">&lt;div class="dropdown-menu dropdown-anchor-left-center dropdown-has-anchor" id="dropdown-standard"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Item 1&lt;/a>&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+					<h4>Trigger:</h4>
+					<pre class="prettyprint stylize">&lt;button data-dropdown="#dropdown-left-center"&gt;Try out!&lt;/button&gt;</pre>
+				</div>
+			</div>
+
+			<div class="example">
+				<div class="meta">
+					<h3><span>No anchor + HTML-Content</span></h3>
+
+					<button class="bordered" data-dropdown="#dropdown-no-anchor-html">Try out!</button>
+
+					<div class="dropdown-menu dropdown-anchor-top-left" id="dropdown-no-anchor-html">
+						<p>I am <b>HTML</b>-<i>Content</i>.</p>
+
+						<button>And a button!</button>
+					</div>
+				</div>
+
+				<div class="code">
+					<h4>Dropdown:</h4>
+					<pre class="prettyprint stylize">&lt;div class="dropdown-menu dropdown-anchor-top-left" id="dropdown-no-anchor-html"&gt;
+	&lt;p&gt;I am &lt;b&gt;HTML&lt;/b&gt;-&lt;i&gt;Content&lt;/i&gt;.&lt;/p&gt;
+
+	&lt;button&gt;And a button!&lt;/button&gt;
+&lt;/div&gt;</pre>
+
+					<h4>Trigger:</h4>
+					<pre class="prettyprint stylize">&lt;button data-dropdown="#dropdown-no-anchor-html"&gt;Try out!&lt;/button&gt;</pre>
+				
+					<p>
+						<b>Note:</b>
+						For dropdowns without anchor you still specify where the anchor would be normally but leave out
+						<code>dropdown-has-anchor</code>.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="setup">
+			<div class="wrap">
+				<h2>Installation</h2>
+
+				<div class="note"><b>Note:</b> You need to have <a href="http://jquery.com">jQuery</a> installed to use SweetDropdown.</div>
+
+				<h3>Package Managers</h3>
+
+				<div class="methods">
+					<div class="method bower">
+						<pre class="prettyprint">$ bower install sweet-dropdown</pre>
+					</div>
+
+					<div class="method npm">
+						<pre class="prettyprint">$ npm install sweet-dropdown</pre>
+					</div>
+				</div>
+
+				<br /><br />
+
+				<h3>Manual</h3>
+
+				<div class="methods">
+					<div class="method manual">
+						<ol>
+							<li>
+								<a class="button bordered" href="https://github.com/adeptoas/sweet-dropdown/releases">Download</a>
+							</li>
+
+							<li>
+								<pre class="prettyprint">&lt;link rel="stylesheet" href="sweet-dropdown/dist/min/jquery.sweet-dropdown.min.css" /></pre>
+								<pre class="prettyprint">&lt;script src="sweet-dropdown/dist/min/jquery.sweet-dropdown.min.js">&lt;/script></pre>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="options">
+			<div class="wrap">
+				<h2>Modifiers</h2>
+
+				<p class="desc">
+					This is an overview of all the available modifier classes and attributes, sorted by whether the class has to be applied
+					to the dropdown itself or the trigger.
+				</p>
+
+				<h3>Dropdown</h3>
+
+				<div class="twrap">
+					<table>
+						<tr>
+							<th width="192">Name</th>
+							<th>Type</th>
+							<th>Description</th>
+						</tr>
+
+						<tr>
+							<td><code class="stylize">dropdown-has-anchor</code></td>
+							<td>Class</td>
+							<td>
+								If specified, dropdown has an anchor.
+							</td>
+						</tr>
+
+						<tr>
+							<td><code class="stylize">dropdown-anchor-{SIDE}-{POSITION}</code></td>
+							<td>Class</td>
+							<td>
+								<p>
+									{SIDE} is the side of the dropdown the anchor should appear on. So if you specifiy
+									<code>left</code>, the dropdown opens to the right.
+									<br />
+									Must be one of:<br />
+									- top (default)<br />
+									- right<br />
+									- bottom<br />
+									- left
+								</p>
+
+								<p>
+									{POSITION} is the position of the anchor on the specified side. Must be one of:<br />
+									- left<br />
+									- center<br />
+									- right
+								</p>
+							</td>
+						</tr>
+
+						<tr>
+							<td><code class="stylize">dropdown-disabled</code></td>
+							<td>Class</td>
+							<td>
+								If specified, dropdown cannot be opened.
+							</td>
+						</tr>
+
+						<tr>
+							<td><code class="stylize">data-add-x</code></td>
+							<td>Atribute</td>
+							<td>
+								Move the dropdown by given amount of pixels to the right. Use negative
+								values for moving to the left.
+							</td>
+						</tr>
+
+						<tr>
+							<td><code class="stylize">data-add-y</code></td>
+							<td>Atribute</td>
+							<td>
+								Move the dropdown by given amount of pixels to the bottom. Use negative
+								values for moving to the top.
+							</td>
+						</tr>
+					</table>
+				</div>
+
+				<h3>Trigger</h3>
+
+				<div class="twrap">
+					<table>
+						<tr>
+							<th width="192">Name</th>
+							<th>Type</th>
+							<th>Description</th>
+						</tr>
+
+						<tr>
+							<td><code class="stylize">dropdown-open</code></td>
+							<td>Class</td>
+							<td>
+								Indicates whether the dropdown for this trigger is open.<br />
+								<small class="grey">This gets added automatically when a dropdown is opened so you can use this for
+								special styles.</small>
+							</td>
+						</tr>
+
+						<tr>
+							<td><code class="stylize">dropdown-use-offset</code></td>
+							<td>Class</td>
+							<td>
+								By default the absolute position inside the document is used to poisition the dropdown.
+								If that fails for you, you can use this class to switch to offset-based positioning
+								instead.
+							</td>
+						</tr>
+
+						<tr>
+							<td><code class="stylize">data-dropdown</code></td>
+							<td>Atribute</td>
+							<td>
+								CSS selector to connect this trigger to a dropdown menu.<br />
+
+								<small class="grey">
+									You can actually use any jQuery-compatible selector here but it is recommended to
+									stick to IDs.
+								</small>
+							</td>
+						</tr>
+
+						<tr>
+							<td><code class="stylize">data-add-anchor-x</code></td>
+							<td>Atribute</td>
+							<td>
+								Move the anchor by given amount of pixels to the right. Use negative
+								values for moving to the left.
+							</td>
+						</tr>
+
+						<tr>
+							<td><code class="stylize">data-add-anchor-y</code></td>
+							<td>Atribute</td>
+							<td>
+								Move the anchor by given amount of pixels to the bottom. Use negative
+								values for moving to the top.
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section class="options methods">
+			<div class="wrap">
+				<h2>Methods</h2>
+
+				<h3>Attach all triggers to their dropdowns</h3>
+				<pre class="prettyprint stylize">$.sweetDropdown.attachAll(); // Automatically called on page load</pre>
+
+				<h3>Hide all dropdowns</h3>
+				<pre class="prettyprint stylize">$.sweetDropdown.hideAll();</pre>
+
+				<h3>Attach a dropdown to a trigger</h3>
+				<pre class="prettyprint stylize">$('.trigger').sweetDropdown('attach', '#dropdown-selector');</pre>
+
+				<h3>Detach a dropdown from a trigger</h3>
+				<pre class="prettyprint stylize">$('.trigger').sweetDropdown('detach');</pre>
+
+				<h3>Show a dropdown</h3>
+				<pre class="prettyprint stylize">$('.trigger').sweetDropdown('show');</pre>
+
+				<h3>Hide a dropdown</h3>
+				<pre class="prettyprint stylize">$('.trigger').sweetDropdown('hide');</pre>
+
+				<h3>Enable a dropdown</h3>
+				<pre class="prettyprint stylize">$('.trigger').sweetDropdown('enable');</pre>
+
+				<h3>Disable a dropdown</h3>
+				<pre class="prettyprint stylize">$('.trigger').sweetDropdown('disable');</pre>
+			</div>
+		</section>
+
+		<section class="license">
+			<div class="wrap">
+				<h2>License &amp; Copyright</h2>
+
+				<pre>/*!
+ * SweetDropdown: Sweet and versatile dropdowns
+ * v<%= pkg.version %>, <%= grunt.template.today("yyyy-mm-dd") %>
+ * http://github.com/adeptoas/sweet-dropdown
+ *
+ * Copyright (c) 2016 Adepto.as AS · Oslo, Norway
+ * Dual licensed under the MIT and GPL licenses.
+ *
+ * See LICENSE-MIT.txt and LICENSE-GPL.txt
+ */
+</pre>
+			</div>
+		</section>
+
+		<footer>
+			<div class="copyright">
+				&copy; 2016 <a href="http://adepto.as"><img src="https://assets.adepto.as/images/adepto/logo_grey.svg" /></a> ·
+				This plugin is dual-licensed under the MIT- and GPLv2-licenses. 
+				<br />
+				For help, visit <a href="https://github.com/adeptoas/sweet-dropdown/issues">the issues section</a> of this repository.
+			</div>
+
+			<div class="links">
+				<a href="http://github.com/adeptoas">
+					<svg style="width:24px; height:24px" viewBox="0 0 24 24">
+					    <path fill="#000000" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+					</svg>
+
+					GitHub
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+/*!
+ * SweetDropdown: Sweet and versatile dropdowns
+ * v<%= pkg.version %>, <%= grunt.template.today("yyyy-mm-dd") %>
+ * http://github.com/adeptoas/sweet-dropdown
+ *
+ * Copyright (c) 2016 Adepto.as AS · Oslo, Norway
+ * Dual licensed under the MIT and GPL licenses.
+ *
+ * See LICENSE-MIT.txt and LICENSE-GPL.txt
+ */
