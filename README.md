@@ -16,8 +16,8 @@ You can also install it manually by [downloading a release archive](https://gith
 Reference these files in your HTML:
 
 ```html
-<link rel="stylesheet" href="path/to/sweetmodal/dist/min/jquery.sweet-dropdown.min.css" />
-<script src="path/to/sweetmodal/dist/min/jquery.sweet-dropdown.min.js"></script>
+<link rel="stylesheet" href="path/to/sweetdropdown/dist/min/jquery.sweet-dropdown.min.css" />
+<script src="path/to/sweetdropdown/dist/min/jquery.sweet-dropdown.min.js"></script>
 ```
 
 ## Examples
