@@ -1,6 +1,6 @@
 /*!
  * SweetDropdown: Sweet and versatile dropdowns
- * v1.0.0, 2016-06-02
+ * v1.0.0, 2017-04-09
  * http://github.com/adeptoas/sweet-dropdown
  *
  * Copyright (c) 2016 Adepto.as AS · Oslo, Norway
